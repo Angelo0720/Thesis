@@ -1,0 +1,6 @@
+<?php
+$username="9ef325_lcemsdb";
+$password="lcems2015";
+$database="9ef325_lcemsdb-db_9ef325_lcemsdb";
+$server="MYSQL5008.Smarterasp.net";
+?>

@@ -1,0 +1,155 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="BFARv3.Admin.Pages.AdminMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <?php
+     $db = mysql_connect("localhost","root",""); 
+     if (!$db) {
+     die("Database connection failed miserably: " . mysql_error());
+     }
+    ?>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+     <link href="https://code.jquery.com/ui/1.10.3/themes/redmond/jquery-ui.css" rel="stylesheet" media="screen"/>
+        <link href="vendors/fullcalendar/fullcalendar.css" rel="stylesheet" media="screen"/>
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- styles -->
+
+    <link href="css/styles.css" rel="stylesheet"/>
+<link href="css/calendar.css" rel="stylesheet" />
+    <link href="css/agency.css" rel="stylesheet" />
+</head>
+
+
+
+<body>
+    <form id="form1" runat="server">
+    <div>
+     <div class="header">
+	     <div class="container">
+	        <div class="row">
+	           <div class="col-md-5">
+	              <!-- Logo -->
+	              <div class="logo">
+	                 <h1><a href="AdminHome.aspx">LCEMS Admin</a></h1>
+	              </div>
+	           </div>
+	           <div class="col-md-5">
+	              <div class="row">
+	                <div class="col-lg-12">
+	                  <div class="input-group form">
+	                       <input type="text" class="form-control" placeholder="Search..."/>
+	                       <span class="input-group-btn">
+	                         <button class="btn btn-primary" type="button">Search</button>
+	                       </span>
+	                  </div>
+	                </div>
+	              </div>
+	           </div>
+	           <div class="col-md-2">
+	              <div class="navbar navbar-inverse" role="banner">
+	                  <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
+	                    <ul class="nav navbar-nav">
+	                      <li class="dropdown">
+	                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Navigation<b class="caret"></b></a>
+	                        <ul class="dropdown-menu animated fadeInUp">
+	                          <li><a href="../../Default.aspx">Go to Main Website</a></li>
+	                          <li><a href="../../Logout.aspx">Logout</a></li>
+	                        </ul>
+	                      </li>
+	                    </ul>
+	                  </nav>
+	              </div>
+	           </div>
+	        </div>
+	     </div>
+	</div>
+
+    <div class="page-content">
+    	<div class="row">
+		  <div class="col-md-2">
+		  	<div class="sidebar content-box" style="display: block;">
+                <ul class="nav">
+                    <!-- Main menu -->
+
+
+                    <li><a href="Reports.aspx"><i class="glyphicon glyphicon-stats"></i> Reports</a></li>
+                    <li class="submenu">
+                         <a href="#">
+                            <i class="glyphicon glyphicon-pencil"></i> Add New Records
+                            <span class="caret pull-right"></span>
+                         </a>
+                         <!-- Sub menu -->
+                         <ul>
+                            <li><a href="AddNewAccount.aspx">Add New Account</a></li>
+                            <li><a href="AddNewBoat.aspx">Add Boat</a></li>
+                            <li><a href="UpdateSpecies.aspx">Add Species</a></li>
+                        </ul>
+                    </li> 
+                    <li class="submenu">
+                         <a href="#">
+                            <i class="glyphicon glyphicon-user"></i> Update Records
+                            <span class="caret pull-right"></span>
+                         </a>
+                         <!-- Sub menu -->
+                         <ul>
+                           
+                             <li><a href="EditAccounts.aspx">Update Accounts</a></li>
+                             <li><a href="EditBoats.aspx">Update Boats</a></li>
+                             <li><a href="EditSpecies.aspx">Update Species</a></li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+             </div>
+		  </div>
+            <div class="column col-md-10">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+            </div>
+		</div>
+    </div>
+
+    <footer>
+         <div class="container">
+         
+            <div class="copy text-center">
+               Copyright LCEMS 2015 <a href='../../Default.aspx'>Region 3 Landed Catch and Effort Monitoring</a>
+            </div>
+            
+         </div>
+      </footer>
+
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+    <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="vendors/morris/morris.css"/>
+
+    <script src="js/custom.js"></script>
+    <script src="js/stats.js"></script>
+
+    <script src="vendors/jquery.knob.js"></script>
+    <script src="vendors/raphael-min.js"></script>
+    <script src="vendors/morris/morris.min.js"></script>
+
+    <script src="vendors/flot/jquery.flot.js"></script>
+    <script src="vendors/flot/jquery.flot.categories.js"></script>
+    <script src="vendors/flot/jquery.flot.pie.js"></script>
+    <script src="vendors/flot/jquery.flot.time.js"></script>
+    <script src="vendors/flot/jquery.flot.stack.js"></script>
+    <script src="vendors/flot/jquery.flot.resize.js"></script>
+
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ds_UserLogs" targetNamespace="http://tempuri.org/ds_UserLogs.xsd" xmlns:mstns="http://tempuri.org/ds_UserLogs.xsd" xmlns="http://tempuri.org/ds_UserLogs.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="lcemsdbConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="lcemsdbConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.lcemsdbConnectionString.ConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="userlogsTableAdapter" GeneratorDataComponentClassName="userlogsTableAdapter" Name="userlogs" UserDataComponentName="userlogsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="lcemsdbConnectionString (Web.config)" DbObjectName="db_9ef325_lcemsdb.userinfo" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        userinfo.Last_Name, userinfo.First_Name, userinfo.Middle_Name, userlogs.Log_Date, userlogs.Log_Time, userlogs.Transaction_Details
+FROM            userlogs INNER JOIN
+                         userinfo ON userlogs.User_ID = userinfo.User_ID</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Log_Date" DataSetColumn="Log_Date" />
+              <Mapping SourceColumn="Log_Time" DataSetColumn="Log_Time" />
+              <Mapping SourceColumn="Transaction_Details" DataSetColumn="Transaction_Details" />
+              <Mapping SourceColumn="Last_Name" DataSetColumn="Last_Name" />
+              <Mapping SourceColumn="First_Name" DataSetColumn="First_Name" />
+              <Mapping SourceColumn="Middle_Name" DataSetColumn="Middle_Name" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ds_UserLogs" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ds_UserLogs" msprop:Generator_UserDSName="ds_UserLogs">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="userlogs" msprop:Generator_TableClassName="userlogsDataTable" msprop:Generator_TableVarName="tableuserlogs" msprop:Generator_RowChangedName="userlogsRowChanged" msprop:Generator_TablePropName="userlogs" msprop:Generator_RowDeletingName="userlogsRowDeleting" msprop:Generator_RowChangingName="userlogsRowChanging" msprop:Generator_RowEvHandlerName="userlogsRowChangeEventHandler" msprop:Generator_RowDeletedName="userlogsRowDeleted" msprop:Generator_RowClassName="userlogsRow" msprop:Generator_UserTableName="userlogs" msprop:Generator_RowEvArgName="userlogsRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Log_Date" msprop:Generator_ColumnVarNameInTable="columnLog_Date" msprop:Generator_ColumnPropNameInRow="Log_Date" msprop:Generator_ColumnPropNameInTable="Log_DateColumn" msprop:Generator_UserColumnName="Log_Date" type="xs:dateTime" />
+              <xs:element name="Log_Time" msprop:Generator_ColumnVarNameInTable="columnLog_Time" msprop:Generator_ColumnPropNameInRow="Log_Time" msprop:Generator_ColumnPropNameInTable="Log_TimeColumn" msprop:Generator_UserColumnName="Log_Time" type="xs:duration" />
+              <xs:element name="Transaction_Details" msprop:Generator_ColumnVarNameInTable="columnTransaction_Details" msprop:Generator_ColumnPropNameInRow="Transaction_Details" msprop:Generator_ColumnPropNameInTable="Transaction_DetailsColumn" msprop:Generator_UserColumnName="Transaction_Details">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="65535" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Last_Name" msprop:Generator_ColumnVarNameInTable="columnLast_Name" msprop:Generator_ColumnPropNameInRow="Last_Name" msprop:Generator_ColumnPropNameInTable="Last_NameColumn" msprop:Generator_UserColumnName="Last_Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="65535" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="First_Name" msprop:Generator_ColumnVarNameInTable="columnFirst_Name" msprop:Generator_ColumnPropNameInRow="First_Name" msprop:Generator_ColumnPropNameInTable="First_NameColumn" msprop:Generator_UserColumnName="First_Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="65535" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Middle_Name" msprop:Generator_ColumnVarNameInTable="columnMiddle_Name" msprop:Generator_ColumnPropNameInRow="Middle_Name" msprop:Generator_ColumnPropNameInTable="Middle_NameColumn" msprop:Generator_UserColumnName="Middle_Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="65535" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

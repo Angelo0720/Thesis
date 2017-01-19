@@ -1,0 +1,120 @@
+<resources>
+    <string name="app_name">BFAR-3 LCEMS</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string-array name="provinve_name">
+        <item>Bataan</item>
+        <item>Aurora</item>
+        <item>Zambales</item>
+    </string-array>
+
+    <string-array name="town">
+        <item>ABUCAY</item>
+        <item>BAGAC</item>
+        <item>BALANGA</item>
+        <item>LIMAY</item>
+        <item>MARIVELES</item>
+        <item>MORONG</item>
+        <item>ORION</item>
+        <item>PILAR</item>
+        <item>SAMAL</item>
+        <item>BALER</item>
+        <item>CASIGURAN</item>
+        <item>DILASAG</item>
+        <item>DINALUNGAN</item>
+        <item>DINGALAN</item>
+        <item>DIPACULAO</item>
+        <item>CABANGAN</item>
+        <item>CANDELARIA</item>
+        <item>IBA</item>
+        <item>MASINLOC</item>
+        <item>PALAUIG</item>
+        <item>SAN ANTONIO</item>
+        <item>SUBIC</item>
+        <item>STA.CRUZ</item>
+    </string-array>
+
+    <string-array name="baranggay">
+        <item>PUERTO RIVAS</item>
+        <item>LANDING</item>
+        <item>SABANG</item>
+        <item>PAG ASA</item>
+        <item>WAWA</item>
+        <item>TABING-ILOG</item>
+        <item>ST.FRANCIS 1</item>
+        <item>ST.FRANCIS 2</item>
+        <item>TOWNSITE</item>
+        <item>BATANGAS 2</item>
+        <item>CAPUNITAN</item>
+        <item>DINIOG</item>
+        <item>MASAGANA</item>
+        <item>BUSOK-BUSOK</item>
+        <item>DILUD</item>
+        <item>DIBACONG</item>
+        <item>ESTEVES</item>
+        <item>POBLACION</item>
+        <item>MAPALAD</item>
+        <item>DINADIAWAN</item>
+        <item>BORLONGAN</item>
+        <item>DIANED</item>
+        <item>DINGALAN FISHPORT</item>
+        <item>ZABALI</item>
+        <item>SABANG</item>
+        <item>CALIBUNGAN</item>
+        <item>MISA</item>
+        <item>LIPAY</item>
+        <item>VENUS</item>
+        <item>POBLACION</item>
+        <item>BALOGO</item>
+        <item>MATALVIS</item>
+        <item>SAN JUAN</item>
+        <item>SITIO LIPAY</item>
+        <item>GARRETA</item>
+        <item>UACON</item>
+        <item>AMUNGAN</item>
+        <item>STO.ROSARIO</item>
+        <item>MACAMPAO</item>
+        <item>LAOAG</item>
+        <item>SAN MIGUEL</item>
+        <item>PUNDAQUIT</item>
+        <item>SUBIC FISHPORT</item>
+    </string-array>
+
+
+    <string-array name="fishing_ground">
+        <item>West Philippine Sea</item>
+        <item>Manila Bay</item>
+        <item>Pacific Ocean</item>
+        <item>Casiguran Sound</item>
+        <item>Baler Bay</item>
+        <item>Casapsapan Bay</item>
+        <item>Dingalan Bay</item>
+        <item>Dibut Bay</item>
+        <item>Pampanga River</item>
+        <item>Swips in Muños</item>
+        <item>Pahingahan Lake</item>
+        <item>Singgalat Dam and Lake</item>
+        <item>Pantabangan Dam</item>
+
+    </string-array>
+
+    <string-array name="fishing_gear">
+        <item>Ringnet</item>
+        <item>Bagnet</item>
+        <item>Otter Trawl</item>
+        <item>Multiple Handline</item>
+        <item>Handline</item>
+        <item>Spear Gun</item>
+        <item>Troll Line</item>
+        <item>Scoop Net</item>
+        <item>Gillnet</item>
+        <item>Jigger</item>
+        <item>Drift Gillnet</item>
+    </string-array>
+
+    <string-array name="boat_category">
+        <item>Municipal</item>
+        <item>Commercial</item>
+    </string-array>
+</resources>
